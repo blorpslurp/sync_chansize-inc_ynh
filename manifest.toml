@@ -49,10 +49,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    #url = "https://github.com/blorpslurp/cy_mod_test/archive/refs/tags/beta.tar.gz"
-    #sha256 = "176c12204667aa7a71046439eb74f28ece92e891cc5b36565c555e28f9b01174"
-    url = "https://github.com/blorpslurp/cy_mod_test/archive/refs/tags/beta2.tar.gz"
-    sha256 = "476a3d0cfaffa088606a736f62e99747a97d0d9c326d51a2947a563baf869e2d"
+    url = "https://github.com/blorpslurp/sync_channel-size-inc/archive/refs/tags/alpha.tar.gz"
+    sha256 = ""
     # autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
