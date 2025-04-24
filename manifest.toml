@@ -1,0 +1,71 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
+packaging_format = 2
+
+id = "cytube"
+name = "CyTube"
+description.en = "Online media synchronizer and chat"
+description.fr = "Synchronisateur de médias et chat en ligne"
+
+version = "3.86.0~ynh1"
+
+maintainers = ["eric_G"]
+
+[upstream]
+license = "MIT"
+website = "https://cytu.be"
+demo = "https://cytu.be/"
+admindoc = "https://github.com/calzoneman/sync/wiki/CyTube-3.0-Installation-Guide"
+code = "https://github.com/blorpslurp/cy_rank_test"
+
+
+[integration]
+yunohost = ">= 12.0.9"
+helpers_version = "2.1"
+architectures = "all"
+multi_instance = true
+
+ldap = false
+sso = false
+
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.path]
+    type = "path"
+    default = "/cytube"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+[resources]
+
+    [resources.sources]
+
+    [resources.sources.main]
+    #url = "https://github.com/blorpslurp/cy_mod_test/archive/refs/tags/beta.tar.gz"
+    #sha256 = "176c12204667aa7a71046439eb74f28ece92e891cc5b36565c555e28f9b01174"
+    url = "https://github.com/blorpslurp/cy_mod_test/archive/refs/tags/beta2.tar.gz"
+    sha256 = "476a3d0cfaffa088606a736f62e99747a97d0d9c326d51a2947a563baf869e2d"
+    # autoupdate.strategy = "latest_github_tag"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.ports]
+
+    [resources.apt]
+    packages = "mariadb-server, build-essential"
+
+    [resources.database]
+    type = "mysql"
