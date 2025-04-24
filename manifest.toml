@@ -50,7 +50,7 @@ ram.runtime = "50M"
 
     [resources.sources.main]
     url = "https://github.com/blorpslurp/sync_channel-size-inc/archive/refs/tags/alpha.tar.gz"
-    sha256 = ""
+    sha256 = "7581f3f0b7b3db56d0509440a6f4d734ccd2852cb0a2336688f445e53d6d157c"
     # autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
