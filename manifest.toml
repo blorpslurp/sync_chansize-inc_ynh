@@ -16,7 +16,7 @@ license = "MIT"
 website = "https://cytu.be"
 demo = "https://cytu.be/"
 admindoc = "https://github.com/calzoneman/sync/wiki/CyTube-3.0-Installation-Guide"
-code = "https://github.com/blorpslurp/cy_rank_test"
+code = "https://github.com/calzoneman/sync/"
 
 
 [integration]
